@@ -1,0 +1,14 @@
+{
+  "dev": {
+    "base_url": "https://dev.bankapp.com",
+    "credentials": {"user": "dev_user", "pass": "dev_pass"}
+  },
+  "qa": {
+    "base_url": "https://qa.bankapp.com",
+    "credentials": {"user": "qa_user", "pass": "qa_pass"}
+  },
+  "prod": {
+    "base_url": "https://bankapp.com",
+    "credentials": {"user": "prod_user", "pass": "prod_pass"}
+  }
+}
