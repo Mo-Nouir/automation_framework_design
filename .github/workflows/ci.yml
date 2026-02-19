@@ -1,0 +1,28 @@
+name: Manual CI/CD Test Runner
+
+# Trigger manually
+on:
+  workflow_dispatch:
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # 4. Run your runner.py
+      - name: Run Tests
+        run: python runner.py

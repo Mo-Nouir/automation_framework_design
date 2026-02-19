@@ -1,0 +1,5 @@
+behave==1.2.7
+selenium==5.11.2
+requests==2.31.0
+allure-behave==2.9.43
+behave-parallel==0.1.3
