@@ -39,6 +39,20 @@ testing using:
     └── .github/workflows/manual-ci.yml
 
 ------------------------------------------------------------------------
+## Page Object Model (POM)
+
+The framework follows the Page Object Model (POM) design pattern to improve maintainability, readability, and scalability
+Each page in the application is represented as a separate class inside pages/
+Example strcuture:
+
+``` 
+pages/
+    base_page.py
+    transfer_page.py
+    login_page.py
+```
+
+------------------------------------------------------------------------
 
 ## Configuration (`config/config.json`)
 
