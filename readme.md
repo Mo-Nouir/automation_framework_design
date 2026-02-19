@@ -20,12 +20,12 @@ testing using:
     automation-framework/
     │
     ├── features/
+    │    ├── steps/
+    │       ├── transfer_steps.py
     │   ├── transfer_money.feature
     │   ├── schedule_payment.feature
     │   ├── currency_conversion.feature
     │
-    ├── steps/
-    │   ├── transfer_steps.py
     │
     ├── pages/
     │   ├── base_page.py
