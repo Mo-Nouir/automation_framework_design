@@ -2,7 +2,7 @@
 
 ## Overview
 
-This framework is designed to support Web, Mobile, and API automation
+This framework is designed to support Web, and API automation
 testing using:
 
 -   **Behave (BDD)**
