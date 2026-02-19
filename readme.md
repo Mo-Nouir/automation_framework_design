@@ -20,7 +20,7 @@ testing using:
     automation-framework/
     │
     ├── features/
-    │    ├── steps/
+    │   ├── steps/
     │       ├── transfer_steps.py
     │   ├── transfer_money.feature
     │   ├── schedule_payment.feature
@@ -182,24 +182,35 @@ Generate HTML report locally:
 
 ------------------------------------------------------------------------
 
+## Data-Driven Testing
+
+Data-driven testing is implemented using Behave parameters directly inside feature files
+```
+Feature: Transfer money between accounts
+
+  Scenario Outline: Successful transfer between accounts
+    Given I am logged in as "<user>"
+    When I transfer "<amount>" from "<from_account>" to "<to_account>"
+    Then I should see a success message
+
+    Examples:
+      | user      | from_account | to_account | amount |
+      | dev_user  | Savings      | Checking   | 100    |
+      | dev_user  | Checking     | Savings    | 50     |
+```
+
+------------------------------------------------------------------------
+
 ## Key Capabilities
 
--   Multi-environment support (dev / staging / production)
+-   Multi-environment support (dev / QA / production)
 -   Data-driven testing via Behave parameters
 -   Parallel execution support
 -   CI/CD integration with GitHub Actions
 -   Detailed Allure reporting
--   Scalable structure for Web, Mobile, and API testing
+-   Scalable structure for Web, and API testing
 
 ------------------------------------------------------------------------
 
-## Sample User Stories Covered
-
--   Transfer money between accounts\
--   Schedule recurring payments\
--   Convert currencies in real-time\
--   Set spending limits and notifications
-
-------------------------------------------------------------------------
 
 
